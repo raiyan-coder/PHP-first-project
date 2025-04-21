@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make you ID card</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./assist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assist/css/style.css">
+</head>
+<body>
+
+    
+
+    <!-- ID Card Form -->
+    <section class="bg-light rounded m-auto p-3 mt-5">
+        <div class="extra"></div>
+        <h5 class="text-center">Create Your Own ID Card</h5>
+        <hr>
+        <form action="idcard.php" method="POST">
+            <label>Name:</label><br>
+            <input type="text" name="user_name" placeholder="Enter your name" required><br><br>
+
+            <label>Phone No.:</label><br>
+            <input type="number" name="phone" placeholder="Enter your phone" required><br><br>
+
+            <label>Age:</label><br>
+            <input type="number" name="age" placeholder="Enter your age" required><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob" required><br><br>
+
+            <input type="submit" value="Generate ID card" name="btn">
+        </form>
+    </section>
+
+    <!-- JS File -->
+    <script src="./assist/css/bootstrap.bundle.min.js"></script>
+</body>
+</html>
